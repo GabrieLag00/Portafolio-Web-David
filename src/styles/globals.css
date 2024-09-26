@@ -1,0 +1,29 @@
+@import "@fontsource/krona-one"; /* Importa la fuente */
+/* Importar diferentes pesos de la fuente Mukta */
+@import '@fontsource/mukta/200.css';  /* Thin */
+@import '@fontsource/mukta/300.css';  /* Light */
+@import '@fontsource/mukta/400.css';  /* Regular */
+@import '@fontsource/mukta/500.css';  /* Medium */
+@import '@fontsource/mukta/600.css';  /* SemiBold */
+@import '@fontsource/mukta/700.css';  /* Bold */
+
+
+/* El archivo base.css inyectado por defecto de la integración */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
+
+/* Invertir colores de SVG personalizado */
+.invert-custom {
+  filter: invert(100%);
+}
+
+/* Para el modo oscuro, podrías revertir la inversión */
+.dark .invert-custom-dark {
+  filter: invert(0%);
+}
