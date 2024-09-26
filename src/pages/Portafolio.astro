@@ -1,0 +1,9 @@
+---
+import {PortfolioPageComponent} from '@/components/portfolio-page';
+import Layout from "../layouts/Layout.astro";
+---
+
+
+<Layout title='Portafolio'>
+    <PortfolioPageComponent client:only="react"/>
+</Layout>
