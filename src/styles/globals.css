@@ -1,4 +1,5 @@
 @import "@fontsource/krona-one"; /* Importa la fuente */
+@import "@fontsource/krona-one/400.css"; /* Regular */
 /* Importar diferentes pesos de la fuente Mukta */
 @import '@fontsource/mukta/200.css';  /* Thin */
 @import '@fontsource/mukta/300.css';  /* Light */
@@ -6,7 +7,7 @@
 @import '@fontsource/mukta/500.css';  /* Medium */
 @import '@fontsource/mukta/600.css';  /* SemiBold */
 @import '@fontsource/mukta/700.css';  /* Bold */
-
+@import "@fontsource/kulim-park/400.css"; /* Regular */
 
 /* El archivo base.css inyectado por defecto de la integración */
 @tailwind base;
@@ -26,4 +27,53 @@
 /* Para el modo oscuro, podrías revertir la inversión */
 .dark .invert-custom-dark {
   filter: invert(0%);
+}
+
+/* Input personalizados de zona de contacto */
+
+.form-group {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  padding: 0 5px;
+  z-index: 10;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, font-size 0.2s ease-out, top 0.2s ease-out;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+
+  /* Fuente Kulim Park para el texto dentro del input */
+}
+
+/* Al hacer focus en el input */
+.focused .form-label {
+  transform: translateY(-100%);
+  font-size: 0.75em;
+  top: -10px;
+}
+
+.form-input:focus {
+  border-bottom: 2px solid blue;
+}
+
+/* Si el input está lleno, mantén el label arriba */
+.filled .form-label {
+  transform: translateY(-100%);
+  font-size: 0.75em;
+  top: -10px;
 }

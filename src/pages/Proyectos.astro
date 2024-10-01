@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {ProjectsPageComponent} from '@/components/projects-page'
+---
+
+
+<Layout title="Proyectos">
+
+   <ProjectsPageComponent client:only="react" />
+
+</Layout>

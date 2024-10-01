@@ -3,16 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import  SectionOne from '@/components/SectionOne';
 import  { SkillsSection }  from '@/components/SkillsSection';
 import { PortfolioSectionComponent } from '@/components/portfolio-section';
-import SectionFour from '@/components/SectionFour.astro'
-import SectionFive from '@/components/SectionFive.astro'
+import SectionFour from '@/components/SectionFour.astro';
+import {CompaniesSection} from '@/components/companies-section'
+import SectionFive from '@/components/SectionFive.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<SectionOne client:only="react"/>
-		<SkillsSection  />
+		<SkillsSection client:only="react" />
 		<PortfolioSectionComponent client:only="react" />
-		<SectionFour />
+		<CompaniesSection client:only="react"/>
 		<SectionFive />
 
 	</main>

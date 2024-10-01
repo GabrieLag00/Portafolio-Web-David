@@ -162,7 +162,7 @@ export function SoftwareServices() {
                   Contáctenos hoy para una consulta gratuita y descubra cómo nuestros servicios de software pueden transformar su empresa.
                 </p>
               </div>
-              <Button size="lg" className="mt-4">
+              <Button size="lg" className="mt-4" variant='customBlack'>
                 Solicitar Consulta Gratuita
               </Button>
             </div>

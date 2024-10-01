@@ -77,7 +77,7 @@ export default function SectionOne() {
             <Button onClick={toggleShowMore} variant="customBlack" size="lg">
               {showMore ? "Leer Menos" : "Leer Más"}
             </Button>
-            <Button  variant="secondary">
+            <Button  variant="customGray" size="lg">
               Certificaciones
             </Button>
           </div>

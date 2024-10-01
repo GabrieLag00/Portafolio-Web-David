@@ -52,6 +52,7 @@ export default {
         sm: "calc(var(--radius, 6px) - 4px)",
       },
       fontFamily: {
+        kulim: ['"Kulim Park"', 'sans-serif'],
         sans: ["Mukta", "sans-serif"], // Fuente principal
         krona: ["Krona One", "sans-serif"], // Fuente para h1
       },
